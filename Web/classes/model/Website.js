@@ -1,0 +1,1 @@
+Ext.define("Web.model.Website",{extend:"Web.model.AbstractLocalized",fields:["site","name","email","siteurl","copyright","gmapClientId","gmapgeoCodeAddr","gmapLatLng","gmaptitle"],getSiteName:function(){var b,a="";b=this.get("siteurl").split("//");if(b.length){a=(b.length>1)?b[1]:b[0]}return a}});

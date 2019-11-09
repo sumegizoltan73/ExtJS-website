@@ -1,0 +1,471 @@
+/*
+    className alapján történő definició felülíródik, ha a selector szerinti név után
+    újabb className szerepel. Pl.:
+    <div class="web-content web-content-kiszamithatosag">-- kék színű ez a tartalom --</div>
+    .web-content {color:red;}
+    .web-content-kiszamithatosag  {color:blue;}
+
+    A felülírása ennek a többszörös className alapú beállításnak:
+    <div class="web-content web-content-kiszamithatosag">-- fekete színű ez a tartalom --</div>
+    .web-content {color:red;}
+    .web-content-kiszamithatosag  {color:blue;}
+    .web-content.web-content-kiszamithatosag  {color:black;}
+*/
+
+/* overwrite */
+.x-panel-body-default { 
+    border-width: 0; 
+}
+.x-viewport body { 
+}
+.x-body {
+    font-family: Palatino,"Palatino Linotype","Hoefler Text",Times,"Times New Roman",serif
+}
+.x-menu-item-icon {
+    display: none;
+}
+.x-menu-item-link {
+    padding: 0 0 0 15px;
+}
+.x-menu-item-icon.lang-flag {
+    display: block;
+    background-repeat: no-repeat;
+    position: static;
+    float: left;
+    width: 26px;
+}
+.x-layer.x-menu {
+    background-color: transparent;
+    color: #090125;
+}
+.x-layer.x-menu .x-menu-body {
+    background-color: white;
+    opacity: 0.8;
+    border: 1px solid #d0d0d0!important;
+    border-radius: 3px;
+}
+.x-layer.x-menu .x-menu-item-text {
+    padding-left: 2px;
+}
+.x-layer.x-menu a {
+    padding-left: 2px;
+    margin-right: 26px;
+}
+.x-layer.x-menu a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.x-layer.x-menu a:hover span {
+    color: blue;
+}
+
+/* web */
+body { 
+    background-color: white; 
+}
+.scrollview {
+    overflow-y: auto;
+    height: 100%;
+}
+#web-msg ul, #web-msg li {
+    display: inline;
+    font-weight: normal;
+}
+
+/* Header */
+.web-header { 
+    border-top: 7px solid #090125; 
+}
+.web-header .x-panel-body-default {
+    background-color: white;
+    color: #090125;
+}
+.web-header h1 { 
+    font-family: times new roman,times; 
+    font-size: 32px;
+    color: #090125;
+}
+.web-header table { 
+    width: 100%;
+}
+.web-header .x-panel-body-default.x-table-layout-ct {
+    border: 1px solid #d0d0d0!important;
+    border-radius: 3px;
+    padding: 3px; 
+    margin-top: 3px;
+}
+
+.web-menu .x-box-target {
+    width: 100% !important;
+    position: relative;
+    text-align: right;
+}
+.web-menu .x-menu-item {
+    display: inline;
+}
+.web-menu .x-menu-item i {
+    margin-right: 3px;
+}
+.web-menu .x-menu-item a {
+    cursor: pointer;
+    font-size: 20px;
+    color: #090125;
+}
+.web-menu .x-menu-item a:hover span {
+    color: #bbbcab;
+}
+.web-menu .x-menu-item a span {
+    font-size: 20px;
+    color: #090125;
+}
+.web-menu .x-menu-item-text {
+    margin-right: 0px;
+}
+.web-header .web-menu .x-panel-body-default {
+    font-size: 20px;
+}
+.web-langmenu-cell {
+    text-align: right;
+    padding-right: 50px;
+}
+
+/* Content */
+.web-content .x-panel-body-default {
+    background-color: transparent; 
+}
+.web-content {
+    min-height: 354px;
+}
+.web-content2 {
+    background: white;
+}
+.web-content-info {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.web-content .web-x-column {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+}
+.web-content .x-column {
+    width: 50%;
+    display: inline-table;
+    float: none;
+}
+.web-content .web-x-column .x-column hr {
+    margin: 0px 20px 10px 20px;
+}
+.web-content .web-x-column .x-column h2 {
+    margin: 0px 20px 0px 20px;
+    font-size: 30px;
+    color: #090125;
+}
+.web-content .web-x-column .x-column h2,
+.web-content2 .web-x-column .x-column h2 {
+    border-radius: 3px 3px 0px 0px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+    background-color: gainsboro;
+}
+
+.web-content .web-x-column .x-column .web-content-data h2,
+.web-content .web-x-column .x-column .web-content-info h2,
+.web-content2 .web-x-column .x-column .web-content-info h2 {
+    box-shadow: none;
+    padding: 0px;
+}
+.web-content .web-x-column .x-column div {
+    margin: 0px 20px 30px 20px;
+}
+
+.web-content .web-x-column .x-column .web-content-data {
+    border-radius: 0px 0px 3px 3px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+}
+.web-content .web-x-column .x-column .web-content-info,
+.web-content2 .web-x-column .x-column .web-content-info {
+    border-radius: 0px 0px 3px 3px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+}
+
+.web-content .web-contentcenter .x-column .web-content-data {
+    font-size: 20px;
+    color: #090125;
+}
+.web-content .web-contentcenter .x-column .web-content-info {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.web-content .web-contentfooter .web-x-column .web-content-info .title {
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+}
+.web-content .web-contentfooter .web-x-column .x-column div {
+    margin: 0px 5px 30px 5px;
+}
+.web-content .web-contentfooter .web-x-column .x-column div {
+    margin: 0px 5px 10px 5px;
+}
+.web-content .web-contentfooter .web-x-column {
+    padding-top: 30px;
+}
+.web-content .web-contentfooter .x-column {
+    width: 25%;
+}
+.web-content .web-contentfooter .web-x-column .x-column h2 {
+    color: #090125;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 5px 0px 5px;
+    background-color: cornflowerblue;
+}
+.web-content .web-contentfooter .x-column .web-content-info {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.web-content .web-contentfooter .x-column .web-line2 {
+    line-height: 2em;
+}
+.web-content-info.info-gray {
+    color: gray;
+}
+.web-content-info.margin-bottom-large {
+    margin-bottom: 40px;
+}
+.web-content-info a {  
+    color: #090125;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.web-content-info a:hover {  
+    color: #090125;
+    text-decoration: underline;
+}
+
+/* Content - joggyakorlat */
+.web-content-jog {
+    min-height: 0px;
+}
+.web-content-jog .web-contentheader .x-column {
+    width: 100%;
+}
+.web-content-jog .web-contentfooter .web-x-column {
+    width: 70%;
+    display: inline-block;
+}
+.web-content-jog .web-contentfooter .web-x-column.web-x-column-small {
+    width: 30%; 
+}
+.web-content-jog .web-contentfooter .web-x-column img {
+    margin: 10px 0px 0px 20px;
+}
+.web-content-jog .web-x-column .x-column h2 {
+    color: #090125;
+    font-weight: 400;
+}
+.web-content-jog .web-x-column .x-column h2 {
+    margin: 10px 1px 0px 1px;
+}
+.web-content-jog .web-x-column .x-column div {
+    margin: 0px 1px 10px 1px;
+}
+.x-column.x-container-contact-office div.web-content-info {
+    border-radius: 0px 0px 3px 3px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+}
+.web-content-jog .web-contentheader .x-column h2 {
+    margin-top: 40px;
+}
+.web-content-jog .web-contentfooter .x-column h2 {
+    font-size: 24px;
+}
+.web-content2.web-content-jog .web-x-column .x-column h2 {
+    background-color: cornflowerblue;
+}
+.web-content-jog .web-x-column div {
+    color: #090125;
+}
+.title.faq {
+    padding-right: 5px;
+}
+
+/* Content - kiszamithatosag */
+.web-content.web-content-kiszamithatosag .web-x-column .x-column h2 {
+    margin-top: 10px;
+}
+.web-content-kiszamithatosag .x-column {
+    width: 100%;
+}
+.web-content-kiszamithatosag .web-contentfooter .x-column {
+    width: 33%;
+}
+.web-content-kiszamithatosag .web-contentfooter img {
+    max-width: 300px;
+    position: absolute;
+}
+
+.web-content-price, .web-content-category {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.x-column.x-container-price {
+    width: 50%;
+}
+.x-column.x-container-price table {
+    border-collapse: collapse;
+}
+.x-column.x-container-price th {
+    text-align: left;
+    border: 1px solid;
+}
+.x-column.x-container-price td {
+    vertical-align: top;
+    border: 1px solid;
+}
+
+.x-column.x-container-category {
+    width: 30%;
+}
+.x-column.x-container-category table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.x-column.x-container-category th {
+    text-align: left;
+    border: 1px solid;
+}
+.x-column.x-container-category td {
+    border: 1px solid;
+}
+
+.web-contentheader .x-panel-body-default {
+    background-color: white; 
+}
+.web-contentcenter .x-panel-body-default {
+    background-color: white;
+    color: #090125;
+}
+
+.web-contentfooter .x-panel-body-default {
+    background-color: white;
+    color: #090125;
+}
+
+/* Content - Kapcsolat */
+.web-content-contact .x-column {
+    display: inline-table;
+    vertical-align: top;
+}
+.web-content-contact .x-column h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.web-content-contact .x-column.x-container-contact h2 {
+    margin-top: 20px;
+}
+.x-column.x-container-contact-img {
+    width: 20%;
+}
+.x-column.x-container-contact {
+    width: 40%;
+}
+.x-column.x-container-contact-office {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.x-container-contact-office i, .web-content-contact .x-fieldset i {
+    width: 25px;
+}
+.x-column.x-container-contact-office h2 {
+    border-radius: 3px 3px 0px 0px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+}
+.x-column.x-container-contact-office div.web-content-info {
+    border-radius: 0px 0px 3px 3px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px;
+}
+.web-content2.web-content-contact .web-x-column .x-column.x-container-contact h2,
+.web-content2.web-content-contact .web-x-column .x-column.x-container-contact-img .web-content-info {
+    box-shadow: none;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.web-content-contact table.x-field .x-field-label-cell {
+    width: 150px;
+}
+.web-content-contact textarea {
+    width: 100%;
+    height: 100%;
+}
+
+/* Google Maps */
+.gmapinfo       { font-family: Segoe UI, Verdana, arial; font-size: 0.7em; }
+#map div { 
+    width: auto; 
+}
+#map {
+    width: 902px; 
+    height: 328px; 
+    margin: 10px; 
+    padding: 0px; 
+    color: #2a3333; 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#eaeaea)); 
+    background: -moz-linear-gradient(center top , white, #eaeaea); 
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr=#ffffff, endcolorstr=#eaeaea); 
+    -moz-box-shadow: rgb(153, 153, 153) 0 2px 4px 0;
+    -webkit-box-shadow: rgb(153, 153, 153) 0 2px 4px 0;
+    box-shadow: rgb(153, 153, 153) 0 2px 4px 0; 
+}
+#map_canvas { 
+    width: auto; 
+    height: 328px; 
+}
+
+/* Footer */
+.web-footer {
+}
+.web-footer .x-panel-body-default {  
+    background-color: white; 
+}
+.web-footercontent .x-panel-body-default {  
+    background-color: white; 
+    color: #090125;
+    font-size: 14px;
+    line-height: 2.3em;
+}
+.web-footercontent { 
+    border-radius: 0px 0px 3px 3px;
+    box-shadow:0px 0px 3px #000000;
+    padding: 3px; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.web-footercontent .title {  
+    margin-right: 10px;
+    font-size: 18px;
+}
+.web-footercontent a {  
+    color: #090125;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.web-footercontent a:hover {  
+    color: #090125;
+    text-decoration: underline;
+}
+.web-footercontent a.links { 
+    font-weight: normal;
+    margin-right: 5px;
+}
